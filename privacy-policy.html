@@ -102,18 +102,14 @@
   .legal-wrap { max-width: 720px; margin: 0 auto; padding: 0 24px 70px; }
   .back-link { display:inline-flex; align-items:center; gap:6px; font-size:13.5px; font-weight:700; color: var(--taupe-deep); margin: 26px 0 8px; }
   .back-link:hover { color: var(--pink-deep); }
-  .status-flag { display:inline-block; background: var(--pink); color:#fff; font-size:11px; font-weight:800; padding:4px 12px; border-radius:999px; margin: 14px 0; }
-  h1.page-title { font-size: clamp(26px,4vw,34px); margin: 10px 0 6px; }
+h1.page-title { font-size: clamp(26px,4vw,34px); margin: 10px 0 6px; }
   .updated { font-size:13px; color: var(--taupe-soft); margin-bottom: 28px; }
   h2.sec { font-size: 18px; margin: 30px 0 10px; }
   .legal-wrap p, .legal-wrap li { font-size: 14.5px; color: var(--taupe); margin-bottom: 9px; }
   .legal-wrap ul { padding-inline-start: 20px; margin-bottom: 9px; }
   .legal-wrap a { color: var(--pink-deep); text-decoration: underline; }
   .confirm { background: var(--amber-bg); border-inline-start: 3px solid var(--amber); border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #8A6A2E; margin: 6px 0 16px; }
-
-  .draft-flag { position: fixed; bottom: 16px; inset-inline-end: 16px; z-index: 50; background: var(--taupe-deep); color: var(--ivory); font-size: 11.5px; font-weight:700; padding: 7px 13px; border-radius: 999px; box-shadow: 0 10px 24px -10px rgba(0,0,0,0.4); }
-
-  @media (max-width: 760px) {
+@media (max-width: 760px) {
     .benefits { grid-template-columns: 1fr; }
     .nursery-band { flex-direction:column; text-align:center; }
     .nursery-band p { margin: 0 auto; }
@@ -139,7 +135,6 @@
 
   <div class="legal-wrap">
     <a class="back-link" href="index.html" data-en="← Back to home" data-ar="→ رجوع للرئيسية">← Back to home</a><br>
-    <span class="status-flag" data-en="Draft — pending confirmation" data-ar="مسودة — بانتظار التأكيد">Draft — pending confirmation</span>
     <h1 class="page-title" data-en="Privacy &amp; Account Deletion" data-ar="سياسة الخصوصية وحذف الحساب">Privacy &amp; Account Deletion</h1>
     <p class="updated" data-en="Effective date: [TO CONFIRM]" data-ar="تاريخ السريان: [بانتظار التأكيد]">Effective date: [TO CONFIRM]</p>
 
@@ -212,8 +207,6 @@
     <h2 class="sec" data-en="Nursery Accounts" data-ar="حسابات الحضانات">Nursery Accounts</h2>
     <div class="confirm" data-en="<b>To confirm:</b> is there a separate deletion process for nursery-owner accounts?" data-ar="<b>للتأكيد:</b> هل يوجد إجراء منفصل لحذف حسابات أصحاب الحضانات؟">To confirm</div>
   </div>
-<div class="draft-flag" data-en="Draft preview — not live" data-ar="معاينة مبدئية — غير منشورة">Draft preview — not live</div>
-
 <script>
   function toggleLang() {
     const html = document.documentElement;
